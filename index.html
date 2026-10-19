@@ -1,1 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dunkin' KSA Command · Primewave</title><style>body{margin:0;font-family:system-ui,sans-serif;background:#fff;color:#3E342F;display:grid;place-items:center;min-height:100vh}b{color:#FF6E0C}</style></head><body><p><b>Dunkin' KSA Command</b> by Primewave · build in progress</p></body></html>
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Dunkin' KSA Command · Primewave</title>
+    <script>
+      // Apply saved theme and language before first paint to avoid a flash.
+      (function () {
+        try {
+          var t = localStorage.getItem('dkc.theme');
+          var l = localStorage.getItem('dkc.lang');
+          var d = document.documentElement;
+          d.setAttribute('data-theme', t === 'dark' || t === 'light' ? t : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+          if (l === 'ar') { d.lang = 'ar'; d.dir = 'rtl'; }
+        } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-DC6GKDiz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bx6T2PrK.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
